@@ -269,7 +269,7 @@ textarea:focus {
 }
 
 .scroll-to-top {
-  animation: scrollToTop 0.5s ease infinite;
+  animation: scrollToTop 2s ease infinite;
 }
 
 @keyframes scrollToTop {
@@ -277,7 +277,11 @@ textarea:focus {
     transform: translateY(0px);
   }
 
+  50% {
+    transform: translateY(-40px);
+  }
+
   100% {
-    transform: translateY(5px);
+    transform: translateY(0px);
   }
 }
