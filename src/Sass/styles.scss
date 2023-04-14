@@ -313,3 +313,12 @@ textarea:focus {
 .visible {
   opacity: 1 !important;
 }
+
+.fixedNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+}

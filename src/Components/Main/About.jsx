@@ -27,9 +27,29 @@ export default function About() {
 
   function revealSection(entries, observer) {
     const [entry] = entries;
+    console.log(entry);
 
     setIsIntersecting(entry.isIntersecting);
   }
+
+  useEffect(() => {
+    const parent = sectionSlide.current.parentElement.parentElement;
+    const navbar = parent.querySelector('.nav');
+
+    const handleScroll = () => {
+      if (window.scrollY >= sectionSlide.current.offsetTop) {
+        navbar.classList.add('fixedNav');
+      } else {
+        navbar.classList.remove('fixedNav');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const img = sectionSlide.current.querySelector('img');
