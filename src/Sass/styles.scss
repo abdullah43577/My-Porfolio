@@ -321,4 +321,15 @@ textarea:focus {
   right: 0;
   width: 100%;
   z-index: 9999;
+  animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
