@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import projects from './projectData';
+import GitHubStats from './GitHubStats';
 
 export default function Projects() {
   const contentData = useRef([]);
@@ -76,10 +77,14 @@ export default function Projects() {
   });
 
   return (
-    <section id="myprojects" className="my-6 bg-white p-8">
-      <h2 className="text-center text-3xl font-bold text-darkBlue">Projects</h2>
+    <>
+      <section id="myprojects" className="my-6 bg-white p-8">
+        <h2 className="text-center text-3xl font-bold text-darkBlue">Projects</h2>
 
-      <div className="projects--container my-16">{myProjects}</div>
-    </section>
+        <div className="projects--container my-16">{myProjects}</div>
+      </section>
+
+      <GitHubStats />
+    </>
   );
 }

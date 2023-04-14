@@ -37,7 +37,7 @@ export default function Hero() {
   const isSmallScreen = useMediaQuery('(max-width:330px)');
 
   return (
-    <section id="hero-section" className="my-[60px] flex flex-col items-center justify-center gap-[3rem] px-8 md:flex-row-reverse">
+    <section id="hero-section" className="mx-auto my-[60px] flex max-w-[1366px] flex-col items-center justify-center gap-[3rem] px-8 md:flex-row-reverse">
       <div className={`relative max-w-[500px] rounded-full border-4 border-veryDarkBlue p-6 md:h-auto md:w-1/2 ${isSmallScreen ? 'w-[300px]' : 'w-[350px]'} ${isSmallScreen ? 'h-[300px]' : 'h-[350px]'}`}>
         <img src={myImage} alt="my image" />
 

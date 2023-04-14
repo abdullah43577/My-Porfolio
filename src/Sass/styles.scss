@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -11,7 +11,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 html,
@@ -39,7 +39,7 @@ span {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-nav {
+.nav {
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -52,7 +52,7 @@ nav {
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
 }
 
 .toggle .line2 {
@@ -207,30 +207,27 @@ form {
   width: 100%;
   height: 100%;
   background-color: hsla(217, 39%, 35%, 0.4);
-  transition: transform 1s ease;
   transform-origin: bottom;
   border-radius: 6px;
-  display: none;
   transform: translateY(100%);
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .project:hover {
   .cover {
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
     animation: hover 1s ease forwards;
   }
 
   img {
-    scale: 1.03;
+    scale: 1.09;
   }
 }
 
 .project:not(:hover) .cover {
-  animation: unHover 1s ease forwards;
-  animation-direction: reverse;
+  animation: unHover 2s ease forwards;
 }
 
 @keyframes hover {
@@ -246,12 +243,10 @@ form {
 @keyframes unHover {
   0% {
     transform: translateY(0%);
-    display: block;
   }
 
   100% {
     transform: translateY(100%);
-    display: block;
   }
 }
 
@@ -269,7 +264,7 @@ textarea:focus {
 }
 
 .scroll-to-top {
-  animation: scrollToTop 2s ease infinite;
+  animation: scrollToTop 3s linear infinite;
 }
 
 @keyframes scrollToTop {
@@ -283,5 +278,30 @@ textarea:focus {
 
   100% {
     transform: translateY(0px);
+  }
+}
+
+.circle {
+  transition: background 1000ms ease, border 400ms linear;
+
+  i {
+    transition: color 1000ms ease;
+  }
+}
+
+#githubstats {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  #githubstats {
+    grid-template-columns: repeat(2, 1fr);
+
+    & > :first-child {
+      grid-column: span 2;
+    }
   }
 }

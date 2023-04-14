@@ -46,7 +46,7 @@ export default function About() {
   }, [isIntersecting]);
 
   return (
-    <section ref={sectionSlide} id="about" className="my-32 px-8">
+    <section ref={sectionSlide} id="about" className="mx-auto my-32 max-w-[1200px] px-8">
       <h2 className="my-8 text-center text-4xl font-bold text-darkBlue">
         About Me <i className="fa-solid fa-user text-darkBlue"></i>
       </h2>
