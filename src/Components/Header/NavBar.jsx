@@ -11,7 +11,7 @@ export default function NavBar() {
 
   return (
     <>
-      <nav className="flex h-[80px] w-full max-w-[1366px] items-center justify-between px-8 py-3">
+      <nav className="flex h-[80px] w-full max-w-[1300px] items-center justify-between px-8 py-3">
         <div className="brandLogoContainer flex w-[100px] cursor-pointer items-center border-2 border-dashed border-background p-1" draggable="true">
           <div className="name bg-cta px-2 py-1 text-xs font-bold text-background">AYO</div>
           <div className="stack mx-auto text-xs font-bold text-background">DEV</div>

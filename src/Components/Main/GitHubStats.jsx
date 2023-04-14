@@ -45,8 +45,8 @@ export default function GitHubStats() {
 
       <div id="githubstats" className="el mx-auto max-w-[1000px]">
         <img src="https://github-readme-stats.vercel.app/api/top-langs?username=abdullah43577&show_icons=true&locale=en&layout=compact" alt="github stat" className="hide mx-auto" />
-        <img src="https://github-readme-stats.vercel.app/api?username=abdullah43577&show_icons=true&locale=en" alt="github stat" className="hide" />
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=abdullah43577&" alt="github stat" className="hide" />
+        <img src="https://github-readme-stats.vercel.app/api?username=abdullah43577&show_icons=true&locale=en" alt="github stat" className="hide mx-auto" />
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=abdullah43577&" alt="github stat" className="hide mx-auto" />
       </div>
     </section>
   );

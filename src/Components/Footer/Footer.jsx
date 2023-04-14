@@ -21,7 +21,7 @@ export default function Footer() {
 
   return (
     <footer id="contact-me" className="relative">
-      <div className="innerContainer mx-auto mb-16 max-w-[1366px] p-8">
+      <div className="innerContainer mx-auto mb-16 max-w-[1300px] p-8">
         <h2 className="my-8 text-center text-4xl font-bold text-darkBlue"> Contact Me</h2>
 
         <div className="footerContainer flex flex-col items-center justify-between gap-16 md:flex-row">
