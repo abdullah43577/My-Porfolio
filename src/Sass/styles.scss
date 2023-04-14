@@ -173,10 +173,9 @@ form {
 
 #myprojects {
   .mainContent {
-    transition: transform 1s ease, opacity 2s ease 200ms;
+    transition: opacity 2s ease 200ms;
 
-    &.slide-out {
-      transform: translateY(100%);
+    &.show {
       opacity: 0;
       visibility: invisible;
     }
@@ -304,4 +303,13 @@ textarea:focus {
       grid-column: span 2;
     }
   }
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 1s ease-in 500ms;
+}
+
+.visible {
+  opacity: 1 !important;
 }

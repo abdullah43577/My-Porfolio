@@ -9,7 +9,7 @@ export default function Projects() {
   useEffect(() => {
     const sectionObserver = new IntersectionObserver(revealSections, {
       root: null,
-      threshold: 0.01,
+      threshold: 0.15,
     });
 
     contentData.current.forEach((ref) => sectionObserver.observe(ref));
@@ -59,7 +59,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div ref={(ref) => (contentData.current[project.id - 1] = ref)} className="mainContent slide-out w-full p-8">
+        <div ref={(ref) => (contentData.current[project.id - 1] = ref)} className="mainContent show w-full p-8">
           <p className="mb-6 text-darkBlue">{project.content}</p>
 
           <div className="tools-used flex flex-wrap items-center gap-3">
