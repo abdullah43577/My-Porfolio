@@ -18,7 +18,7 @@ export default function NavBar() {
         </div>
 
         <div
-          className={`mobilenav fixed right-0 top-[80px] flex h-full w-[45%] ${
+          className={`mobilenav fixed right-0 top-[80px] flex h-full w-[50%] ${
             !navState ? 'translate-x-[100%]' : ''
           } z-50 flex-col items-center gap-[2rem] bg-navBar md:relative md:top-0 md:translate-x-0 md:flex-row md:justify-center md:bg-transparent`}
         >

@@ -14,12 +14,12 @@ export default {
     extend: {
       colors: {
         background: '#F3F3F3',
-        navBar: '#645496',
+        navBar: '#333333',
         lightShades: '#A14B9A',
-        cta: '#DA3683',
-        cta2: '#FF3355',
+        cta: ' #1A857F',
+        cta2: '#00C6BD',
         veryDarkBlue: '#2F4858',
-        darkBlue: '#37527C',
+        darkBlue: '#333333',
         purplishBlue: '#645496',
         glass: 'rgba(255, 255, 255, 0.2)',
 

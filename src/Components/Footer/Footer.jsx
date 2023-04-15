@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from './helper';
 import emailjs from '@emailjs/browser';
+import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from './helper';
 
 export default function Footer() {
   const [form, setForm] = useState({
@@ -17,8 +17,6 @@ export default function Footer() {
     setForm((prevValue) => ({ ...prevValue, [name]: value }));
   };
 
-  const isFilledCorrectly = Object.values(form);
-
   const handleForm = function (e) {
     e.preventDefault();
 
@@ -31,6 +29,7 @@ export default function Footer() {
 
     emailjs.send(SERVICE_ID, TEMPLATE_ID, form, PUBLIC_KEY).then(
       (response) => {
+        alert('Thanks for getting in touch');
         setForm({
           firstName: '',
           lastName: '',
@@ -77,7 +76,7 @@ export default function Footer() {
               <h3 className="flex items-center gap-2 text-xl font-bold text-darkBlue">
                 <i className="fa-solid fa-location-dot"></i> <span>Location</span>
               </h3>
-              <p className="text-veryDarkBlue">18, HSE ATANDA Badmus Street, Abijo GRA, Owode Labora, Ajah Lagos, Nigeria</p>
+              <p className="text-veryDarkBlue">Lagos, Nigeria</p>
             </div>
 
             <div className="info5 flex items-center gap-6">

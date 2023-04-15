@@ -66,9 +66,7 @@ export default function About() {
 
   return (
     <section ref={sectionSlide} id="about" className="mx-auto my-32 max-w-[1300px] px-8">
-      <h2 className="my-8 text-center text-4xl font-bold text-darkBlue">
-        About Me <i className="fa-solid fa-user text-darkBlue"></i>
-      </h2>
+      <h2 className="my-8 text-center text-4xl font-bold text-darkBlue">About Me</h2>
       <div className="content my-4 flex flex-col items-center gap-[3rem] text-center md:flex-row-reverse md:items-start md:justify-center md:text-left">
         <img src={myImage} alt="My image" className="slide-out mx-auto w-[350px] md:mx-0 md:w-[450px] lg:w-[600px]" />
 
