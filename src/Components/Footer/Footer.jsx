@@ -142,7 +142,7 @@ export default function Footer() {
             </div>
 
             <div className="flex items-center">
-              <button className="mt-4 w-full rounded-md bg-cta px-4 py-3 font-bold text-background hover:border-2 hover:border-dashed hover:border-cta hover:bg-transparent hover:text-cta">
+              <button className="mt-4 w-full rounded-md border-2 bg-cta px-4 py-3 font-bold text-background hover:border-dashed hover:border-cta hover:bg-transparent hover:text-cta">
                 <i className="fa-solid fa-envelope"></i> Get In Touch
               </button>
             </div>

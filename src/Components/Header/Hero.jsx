@@ -48,7 +48,7 @@ export default function Hero() {
         </p>
 
         <a href="#contact-me">
-          <button className="mt-4 rounded-md bg-cta px-4 py-3 font-bold text-background hover:border-2 hover:border-dashed hover:border-cta hover:bg-transparent hover:text-cta">Contact Me</button>
+          <button className="mt-4 rounded-md border-2 bg-cta px-4 py-3 font-bold text-background hover:border-dashed hover:border-cta hover:bg-transparent hover:text-cta">Contact Me</button>
         </a>
       </section>
     </section>

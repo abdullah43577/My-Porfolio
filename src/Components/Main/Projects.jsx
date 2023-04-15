@@ -50,13 +50,13 @@ export default function Projects() {
           <img src={project.img} alt={project.alt} className={`w-full ${project.reverse ? 'lg:rounded-r-2xl' : 'lg:rounded-l-2xl'}`} />
           <div className={`cover flex items-center justify-center gap-4 overflow-hidden ${project.reverse ? 'lg:rounded-r-2xl' : 'rounded-l-2xl'}`}>
             <a href={project.githubURL} target="_blank">
-              <div className="liveURL absolute left-0 top-3 bg-navBar px-16 py-3 text-background">
+              <div className="liveURL absolute left-0 top-6 bg-navBar px-16 py-3 text-background">
                 <i className="fa-brands fa-github fa-lg"></i> View on Github
               </div>
             </a>
 
             <a href={project.liveURL} target="_blank">
-              <div className="liveURL absolute bottom-3 right-0 bg-navBar px-16 py-3 text-background">
+              <div className="liveURL absolute bottom-6 right-0 bg-navBar px-16 py-3 text-background">
                 <i className="fa-solid fa-arrow-up-right-from-square fa-lg"></i> Check it out
               </div>
             </a>
@@ -72,7 +72,7 @@ export default function Projects() {
           <div className="tools-used flex flex-wrap items-center gap-3">
             {project.techStacks.map((techStack, i) => {
               return (
-                <div key={i} className={`${techStack.toLowerCase()} cursor-pointer rounded border-dashed border-darkBlue bg-darkBlue px-3 py-2 text-sm font-bold text-background hover:border-2 hover:bg-transparent hover:text-cta2 md:text-base`}>
+                <div key={i} className={`${techStack.toLowerCase()} cursor-pointer rounded border-2 border-dashed border-darkBlue bg-darkBlue px-3 py-2 text-sm font-bold text-background hover:bg-transparent hover:text-cta2 md:text-base`}>
                   {techStack}
                 </div>
               );
