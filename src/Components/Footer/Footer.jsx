@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from './helper';
+import emailjs from '@emailjs/browser';
 
 export default function Footer() {
   const [form, setForm] = useState({
@@ -15,8 +17,32 @@ export default function Footer() {
     setForm((prevValue) => ({ ...prevValue, [name]: value }));
   };
 
+  const isFilledCorrectly = Object.values(form);
+
   const handleForm = function (e) {
     e.preventDefault();
+
+    const isFilledCorrectly = Object.values(form);
+
+    if (isFilledCorrectly.includes('')) {
+      alert('please make sure you filled all required inputs correctly');
+      return;
+    }
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, form, PUBLIC_KEY).then(
+      (response) => {
+        setForm({
+          firstName: '',
+          lastName: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+      },
+      (error) => {
+        console.log('FAILED...', error);
+      }
+    );
   };
 
   return (
@@ -24,7 +50,7 @@ export default function Footer() {
       <div className="innerContainer mx-auto mb-16 max-w-[1300px] p-8">
         <h2 className="my-8 text-center text-4xl font-bold text-darkBlue"> Contact Me</h2>
 
-        <div className="footerContainer flex flex-col items-center justify-between gap-16 md:flex-row">
+        <div className="footerContainer flex flex-col-reverse items-center justify-between gap-16 md:flex-row">
           <div className="myInfo flex flex-col gap-8">
             <div className="info1 flex items-center gap-6">
               <h3 className="flex items-center gap-2 text-xl font-bold text-darkBlue">
@@ -80,7 +106,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <form action="" className="flex w-full max-w-[700px] flex-col gap-[1.5rem] rounded-lg bg-white p-10 md:ml-auto md:grid" onClick={handleForm}>
+          <form action="" className="flex w-full max-w-[700px] flex-col gap-[1.5rem] rounded-lg bg-white p-10 md:ml-auto md:grid" onSubmit={handleForm}>
             <div className="firstName flex flex-col items-start">
               <label htmlFor="firstName" className="mb-2 font-medium text-veryDarkBlue">
                 First Name
@@ -99,7 +125,7 @@ export default function Footer() {
               <label htmlFor="email" className="mb-2 font-medium text-veryDarkBlue">
                 Email
               </label>
-              <input type="email" name="email" value={form.email} placeholder="Email" className="border-gray w-full border-2 px-4 py-3 outline-none" onChange={handleFormChange} />
+              <input type="email" name="email" value={form.email} placeholder="example@example.com" className="border-gray w-full border-2 px-4 py-3 outline-none" onChange={handleFormChange} />
             </div>
 
             <div className="subject flex flex-col items-start">
@@ -116,13 +142,9 @@ export default function Footer() {
               <textarea name="message" id="message" value={form.message} placeholder="message" className="border-gray w-full border-2 px-4 py-3 outline-none" onChange={handleFormChange}></textarea>
             </div>
 
-            <div className="btn-sect flex flex-col gap-[0.5rem]">
-              <button className="mt-4 rounded-md bg-cta px-4 py-3 font-bold text-background hover:border-2 hover:border-dashed hover:border-cta hover:bg-transparent hover:text-cta">
-                <i className="fa-solid fa-message"></i> Send Message
-              </button>
-
-              <button className="mt-4 rounded-md bg-cta px-4 py-3 font-bold text-background hover:border-2 hover:border-dashed hover:border-cta hover:bg-transparent hover:text-cta">
-                <i className="fa-solid fa-envelope"></i> Send an Email Instead!
+            <div className="flex items-center">
+              <button className="mt-4 w-full rounded-md bg-cta px-4 py-3 font-bold text-background hover:border-2 hover:border-dashed hover:border-cta hover:bg-transparent hover:text-cta">
+                <i className="fa-solid fa-envelope"></i> Get In Touch
               </button>
             </div>
           </form>

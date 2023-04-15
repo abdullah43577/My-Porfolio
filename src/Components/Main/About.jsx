@@ -27,7 +27,6 @@ export default function About() {
 
   function revealSection(entries, observer) {
     const [entry] = entries;
-    console.log(entry);
 
     setIsIntersecting(entry.isIntersecting);
   }

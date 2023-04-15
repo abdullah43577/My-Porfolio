@@ -167,7 +167,7 @@ export default function Counter() {
 
 Taking a critical look at the code above, you'll notice that the react process is way complicated and probably less understandable at least for a beginner. But the truth is, the react process is way better, and here's why
 
-- Unlike vanilla JS, where you'd have to work with but your html and JS file together, using React, you don't have to worry about your html file, because you write your html in your javascript file in a special syntax called `jsx`
+- Unlike vanilla JS, where you'd have to work with your html and JS file together, using React, you don't have to worry about your html file, because you write your html in your javascript file in a special syntax called `jsx`
 
 - Unlike vanilla JS, where you'd have to select elements manually before you can apply any sort of interactiveness to the element, for example:
 
@@ -186,6 +186,14 @@ react doesn't do this, react creates this sort of relationship between it's elem
 +<button onClick={handleIncrement}>Increment</button>
 ```
 
-- Unlike most javascript codes you'd see out there, that write their js codes all in one file. This could get a lot more clumpsy over time if the codebase is such a large one. Using react, there's a concept called components. What this means is you split up your code into several parts to form a whole. This parts you split your code into are called components.
+- Unlike most javascript codes you'd see out there, that write their js codes all in one file. This could get a lot more clumpsy over time if the codebase is such a large one. Using react, there's a concept called components. What this means is, you split up your code into several parts to form a whole. This parts you split your code into are called components.
 
-There are so many other benefits of react over vanilla JS I've discovered over time, and I'm yet to discover it all.
+There are so many other benefits of react over vanilla JS that I've discovered over time, and I'm yet to discover it all.
+
+# Finally
+
+I also had to work with [EmailJS](emailjs.com) to implement the contact form submission on the clientSide the docs is user friendly, and I didn't struggle following along. I hope I'd be able to get an job/paid intership position soon enough so that I can pay for this tool, I'm on the free plan which has just 200 email quota. Once that's exhausted then I'd have to result to other options out there.
+
+Well in short, I loved building this portfolio, I'd been procrastinating building this, I kinda felt I wasn't ready to build it yet. But then I also felt I was just wasting too much time in the same state, I had to make progress by moving on, so I got to work and built this. I will most probably be making changes on the UI sometimes in the future when I've learnt some other new things along my journey.
+
+I'd really love it if you let me know what you think about this.
