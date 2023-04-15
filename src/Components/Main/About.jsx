@@ -67,10 +67,10 @@ export default function About() {
   return (
     <section ref={sectionSlide} id="about" className="mx-auto my-32 max-w-[1300px] px-8">
       <h2 className="my-8 text-center text-4xl font-bold text-darkBlue">About Me</h2>
-      <div className="content my-4 flex flex-col items-center gap-[3rem] text-center md:flex-row-reverse md:items-start md:justify-center md:text-left">
-        <img src={myImage} alt="My image" className="slide-out mx-auto w-[350px] md:mx-0 md:w-[450px] lg:w-[600px]" />
+      <div className="content my-4 flex flex-col items-center gap-[3rem] text-center lg:flex-row-reverse lg:items-start lg:justify-center lg:text-left">
+        <img src={myImage} alt="My image" className="slide-out mx-auto w-[350px] max-w-[50%] md:mx-0 md:w-[450px] lg:w-[600px]" />
 
-        <div className="text slide-out flex flex-col gap-3 font-medium text-veryDarkBlue md:w-[40%]">
+        <div className="text slide-out flex max-w-[50%] flex-col gap-3 font-medium text-veryDarkBlue md:w-[40%]">
           <p className="md:text-lg">
             I'm a Frontend Developer from Lagos, Nigeria with 2+ years of experience. I am passionate about building fully interactive, responsive, and attractive websites using my skills. In 2022, I earned the Responsive Web Design certificate from
             freecodecamp.org, and in 2023, I successfully completed a JavaScript course on Udemy with over 69 hours of coding exercises.
@@ -95,7 +95,7 @@ export default function About() {
             , where I am highly active and consistent with my commits.
           </p>
 
-          <button className="mx-auto mt-4 max-w-[150px] rounded-md bg-cta px-4 py-3 font-bold text-background hover:border-2 hover:border-dashed hover:border-cta hover:bg-transparent hover:text-cta md:mx-0" onClick={handleAboutSection}>
+          <button className="mx-auto mt-4 max-w-[150px] rounded-md border-2 bg-cta px-4 py-3 font-bold text-background hover:border-dashed hover:border-cta hover:bg-transparent hover:text-cta lg:mx-0" onClick={handleAboutSection}>
             {!isVisible ? 'Read More' : 'Truncate'}
           </button>
         </div>
