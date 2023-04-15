@@ -45,7 +45,7 @@ export default function Projects() {
 
   const myProjects = projects.map((project) => {
     return (
-      <div key={project.id} className="project mx-auto flex w-full max-w-[400px] cursor-pointer flex-col items-center rounded-2xl lg:max-w-[1200px] lg:flex-row lg:rounded-l-2xl">
+      <div key={project.id} className="project flex w-full cursor-pointer flex-col items-center rounded-2xl lg:flex-row lg:rounded-l-2xl">
         <div className="imageContainer relative h-auto w-full cursor-pointer overflow-hidden rounded-t-2xl lg:rounded-l-2xl lg:rounded-r-none">
           <img src={project.img} alt={project.alt} className="w-full rounded-t-2xl lg:rounded-l-2xl lg:rounded-r-none" />
           <div className="cover flex items-center justify-center gap-4 overflow-hidden">
@@ -81,7 +81,7 @@ export default function Projects() {
       <section id="myprojects" className="my-6 bg-white p-8">
         <h2 className="text-center text-3xl font-bold text-darkBlue">Projects</h2>
 
-        <div className="projects--container my-16">{myProjects}</div>
+        <div className="projects--container mx-auto my-16 max-w-[400px] lg:max-w-[1200px]">{myProjects}</div>
       </section>
 
       <GitHubStats />
