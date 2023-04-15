@@ -208,7 +208,7 @@ form {
 .cover {
   width: 100%;
   height: 100%;
-  background-color: hsla(217, 39%, 35%, 0.4);
+  background-color: hsla(0, 0%, 20%, 0.2);
   transform-origin: bottom;
   border-radius: 6px;
   transform: translateY(100%);
@@ -334,5 +334,11 @@ textarea:focus {
 
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media (max-width: 968px) {
+  .mainContent {
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
   }
 }

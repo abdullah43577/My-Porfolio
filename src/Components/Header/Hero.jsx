@@ -1,25 +1,11 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useMediaQuery } from '@react-hook/media-query';
-import myImage from '../../assets/my Image.png';
+import myImage from '../../assets/my Image-min.png';
 import Typed from 'typed.js';
 
 export default function Hero() {
   const typeRef = useRef(null);
   const programRef = useRef(null);
-
-  // useEffect(() => {
-  //   const type = new Typed(typeRef.current, {
-  //     strings: ['Frontend Developer', 'Frontend Engineer', 'Web Developer', 'Web Engineer', 'Software Engineer'],
-  //     typeSpeed: 100,
-  //     backSpeed: 100,
-  //     loop: true,
-  //     showCursor: false,
-  //   });
-
-  //   return () => {
-  //     type.destroy();
-  //   };
-  // }, []);
 
   useEffect(() => {
     const type = new Typed(programRef.current, {
