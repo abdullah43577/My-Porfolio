@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { useMediaQuery } from '@react-hook/media-query';
 import myImage from '../../assets/my Image-min.png';
 import Typed from 'typed.js';
@@ -34,7 +34,7 @@ export default function Hero() {
       </div>
 
       <section className="hero-content text-center md:w-1/2 md:text-left">
-        <p className="text-base font-medium italic text-darkBlue md:text-xl">Hello👋 I'm</p>
+        <p className="text-base font-medium italic text-darkBlue md:text-xl">Hello👋 I am____</p>
         <h1 className="py-3 text-3xl font-bold text-veryDarkBlue">
           Abdullah Ayoola, I'm a <span className="text-4xl text-cta2 md:text-5xl">Frontend Developer</span> From Nigeria
         </h1>

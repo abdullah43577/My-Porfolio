@@ -33,7 +33,7 @@ export default function Header() {
         <Hero />
       </header>
 
-      <div className={`overlay fixed left-0 top-0 z-[6000] ${!navState ? 'hidden' : ''} h-full w-full bg-[#33333333]`}></div>
+      <div className={`overlay fixed left-0 top-0 z-[6000] ${!navState ? 'hidden' : ''} h-full w-full bg-[#33333333]`} onClick={handleNav}></div>
     </>
   );
 }
