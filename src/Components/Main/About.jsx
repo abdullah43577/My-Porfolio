@@ -80,7 +80,7 @@ export default function About() {
             certifications, along with my consistent contributions to open-source projects, demonstrate my dedication to improving my skills and staying up-to-date with emerging technologies.
           </p>
 
-          <p className="md:text-lg">
+          <p className={`${!isVisible && 'hidden'} md:text-lg`}>
             In addition to my technical proficiency, I am a creative problem solver with a keen eye for detail. I have completed over 41 coding challenges on{' '}
             <a href="https://www.frontendmentor.io/profile/abdullah43577" target="_blank" className="text-cta2 underline">
               Frontend Mentor's website
@@ -95,7 +95,6 @@ export default function About() {
             </a>{' '}
             is a testament to my passion for staying active and engaged in the development community.
           </p>
-          <p className={`${!isVisible && 'hidden'} md:text-lg`}>I am excited to bring my skills and enthusiasm to a team of like-minded professionals who are committed to making a difference in the world of web development.</p>
 
           <button className="mx-auto mt-4 max-w-[150px] rounded-md border-2 bg-cta px-4 py-3 font-bold text-background hover:border-dashed hover:border-cta hover:bg-transparent hover:text-cta lg:mx-0" onClick={handleAboutSection}>
             {!isVisible ? 'Read More' : 'Truncate'}

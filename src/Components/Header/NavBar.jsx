@@ -14,7 +14,7 @@ export default function NavBar(props) {
       <div
         className={`mobilenav fixed right-0 top-[80px] flex h-full ${isSmallScreen ? 'w-[60%]' : 'w-[50%]'} ${
           !props.navState ? 'translate-x-[100%]' : ''
-        } z-50 flex-col items-center gap-[2rem] bg-navBar md:relative md:top-0 md:translate-x-0 md:flex-row md:justify-center md:bg-transparent`}
+        } z-[9999] h-screen flex-col items-center gap-[2rem] bg-navBar md:relative md:top-0 md:translate-x-0 md:flex-row md:justify-center md:bg-transparent`}
       >
         <ul className="flex flex-col items-center md:flex-row">
           <li className="py-4 text-xl text-background hover:text-cta md:px-4 md:py-0" onClick={props.handleNav}>
