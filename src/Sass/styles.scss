@@ -327,13 +327,42 @@ textarea:focus {
   animation: slideDown 500ms ease-in;
 }
 
+.nav:not(.fixedNav) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  animation: moveUp 2s ease-out forwards;
+}
+
 @keyframes slideDown {
   0% {
     transform: translateY(-50px);
+    opacity: 0;
   }
 
   100% {
     transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    position: relative;
+    opacity: 1;
   }
 }
 

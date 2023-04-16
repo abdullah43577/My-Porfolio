@@ -72,28 +72,30 @@ export default function About() {
 
         <div className="text slide-out flex flex-col gap-3 font-medium text-veryDarkBlue md:w-[40%]">
           <p className="md:text-lg">
-            I'm a Frontend Developer from Lagos, Nigeria with 2+ years of experience. I am passionate about building fully interactive, responsive, and attractive websites using my skills. In 2022, I earned the Responsive Web Design certificate from
-            freecodecamp.org, and in 2023, I successfully completed a JavaScript course on Udemy with over 69 hours of coding exercises.
+            As a skilled Frontend Developer with over 2 years of experience, I am passionate about creating visually stunning, fully interactive, and responsive websites that engage users and drive conversions. Based in Lagos, Nigeria, I am dedicated
+            to utilizing my expertise to make a positive impact on the online world.
           </p>
           <p className="md:text-lg">
-            Since I was little, I've always been fascinated with computers and the endless possibilities they offer. Becoming a programmer has been the best decision of my life, as I get to use my creativity to make a positive impact on the online
-            world.
+            My commitment to continuous learning is evident in my acquisition of the Responsive Web Design certificate from freecodecamp.org in 2022 and the successful completion of a rigorous 69-hour JavaScript course on Udemy in 2023. These
+            certifications, along with my consistent contributions to open-source projects, demonstrate my dedication to improving my skills and staying up-to-date with emerging technologies.
           </p>
 
-          <p className={`${!isVisible && 'hidden'} md:text-lg`}>
-            I am also highly dedicated to improving my skills and knowledge, constantly working on coding challenges and projects. To date, I have completed over 41 coding challenges on{' '}
+          <p className="md:text-lg">
+            In addition to my technical proficiency, I am a creative problem solver with a keen eye for detail. I have completed over 41 coding challenges on{' '}
             <a href="https://www.frontendmentor.io/profile/abdullah43577" target="_blank" className="text-cta2 underline">
               Frontend Mentor's website
             </a>
-            , with over 1000 points accumulated.
+            , earning over 1000 points and honing my ability to think outside the box and create innovative solutions.
           </p>
+
           <p className={`${!isVisible && 'hidden'} md:text-lg`}>
-            In my free time, I enjoy exploring new technologies and contributing to open-source projects. You can find my latest projects and contributions on my{' '}
+            When I'm not coding, I enjoy exploring new technologies and finding ways to incorporate them into my projects. My{' '}
             <a href="https://github.com/abdullah43577" target="_blank" className="text-cta2 underline">
               GitHub profile
-            </a>
-            , where I am highly active and consistent with my commits.
+            </a>{' '}
+            is a testament to my passion for staying active and engaged in the development community.
           </p>
+          <p className={`${!isVisible && 'hidden'} md:text-lg`}>I am excited to bring my skills and enthusiasm to a team of like-minded professionals who are committed to making a difference in the world of web development.</p>
 
           <button className="mx-auto mt-4 max-w-[150px] rounded-md border-2 bg-cta px-4 py-3 font-bold text-background hover:border-dashed hover:border-cta hover:bg-transparent hover:text-cta lg:mx-0" onClick={handleAboutSection}>
             {!isVisible ? 'Read More' : 'Truncate'}
