@@ -22,8 +22,8 @@ export default function Hero() {
   const isSmallScreen = useMediaQuery('(max-width:330px)');
 
   return (
-    <section id="hero-section" className="mx-auto my-[60px] flex max-w-[1366px] flex-col items-center justify-center gap-[3rem] px-8 md:flex-row-reverse">
-      <div className={`relative max-w-[500px] rounded-full border-4 border-veryDarkBlue p-6 md:h-auto md:w-1/2 ${isSmallScreen ? 'w-[300px]' : 'w-[350px]'} ${isSmallScreen ? 'h-[300px]' : 'h-[350px]'}`}>
+    <section id="hero-section" className="mx-auto my-[60px] flex max-w-[1366px] flex-col items-center justify-center gap-[3rem] px-8 lg:flex-row-reverse">
+      <div className={`relative max-w-[500px] rounded-full border-4 border-veryDarkBlue p-6 md:h-auto lg:w-1/2 ${isSmallScreen ? 'w-[300px]' : 'w-[350px]'} ${isSmallScreen ? 'h-[300px]' : 'h-[350px]'}`}>
         <img src={myImage} alt="my image" />
 
         <div className={`experiencebar absolute bottom-[20%] left-0 cursor-pointer rounded-md bg-veryDarkBlue p-3 font-bold text-background ${isSmallScreen ? 'translate-x-[2%]' : 'translate-x-0'}`}>2+ Years Experience</div>
@@ -33,12 +33,12 @@ export default function Hero() {
         </div>
       </div>
 
-      <section className="hero-content text-center md:w-1/2 md:text-left">
+      <section className="hero-content text-center lg:w-1/2 lg:text-left">
         <p className="text-base font-medium italic text-darkBlue md:text-xl">Hello👋 my name is____</p>
         <h1 className="py-3 text-3xl font-bold text-veryDarkBlue">
           Abdullah Ayoola, I'm a <span className="text-4xl text-cta2 md:text-5xl">Frontend Developer</span> From Nigeria
         </h1>
-        <p className="text-base font-medium text-darkBlue md:text-xl">
+        <p className={`text-base font-medium text-darkBlue md:text-xl ${isSmallScreen && 'text-[12px]'}`}>
           Elevating the online world building Responsive, Interactive and Attractive Web Interfaces using tools such as <span ref={programRef} className="font-bold text-cta2"></span>
         </p>
 
