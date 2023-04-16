@@ -46,7 +46,7 @@ export default function Projects() {
   const myProjects = projects.map((project) => {
     return (
       <div key={project.id} className={`project flex w-full cursor-pointer flex-col items-center rounded-2xl ${project.reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} lg:rounded-l-2xl`}>
-        <div className={`imageContainer relative h-auto w-full cursor-pointer overflow-hidden ${project.reverse ? 'lg:rounded-r-2xl' : 'lg:rounded-l-2xl'} hidden w-1/2 lg:block`}>
+        <div className={`imageContainer relative h-auto w-full cursor-pointer overflow-hidden ${project.reverse ? 'lg:rounded-r-2xl' : 'lg:rounded-l-2xl'} hidden lg:block lg:w-1/2`}>
           <img src={project.img} alt={project.alt} className={`w-full ${project.reverse ? 'lg:rounded-r-2xl' : 'lg:rounded-l-2xl'}`} />
           <div className={`cover flex items-center justify-center gap-4 overflow-hidden ${project.reverse ? 'lg:rounded-r-2xl' : 'rounded-l-2xl'}`}>
             <a href={project.githubURL} target="_blank">
