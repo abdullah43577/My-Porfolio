@@ -342,3 +342,7 @@ textarea:focus {
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
   }
 }
+
+.becomeFixed {
+  overflow-y: hidden !important;
+}
