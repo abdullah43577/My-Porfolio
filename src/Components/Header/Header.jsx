@@ -7,9 +7,9 @@ export default function Header() {
   const [navState, setNavState] = useState(false);
 
   const [fixed, setFixed] = useState(false);
-  const body = document.querySelector('body');
 
   useEffect(() => {
+    const body = document.querySelector('body');
     if (fixed) {
       body.classList.add('becomeFixed');
       document.documentElement.classList.add('becomeFixed');
