@@ -19,7 +19,7 @@ export default function Hero() {
     };
   }, []);
 
-  const isSmallScreen = useMediaQuery('(max-width:330px)');
+  const isSmallScreen = useMediaQuery('(max-width:380px)');
 
   return (
     <section id="hero-section" className="mx-auto my-[60px] flex max-w-[1366px] flex-col items-center justify-center gap-[3rem] px-8 lg:flex-row-reverse">
@@ -38,8 +38,8 @@ export default function Hero() {
         <h1 className="py-3 text-3xl font-bold text-veryDarkBlue">
           Abdullah Ayoola, I'm a <span className="text-4xl text-cta2 md:text-5xl">Frontend Developer</span> From Nigeria
         </h1>
-        <p className={`text-base font-medium text-darkBlue md:text-xl ${isSmallScreen && 'text-[12px]'}`}>
-          Elevating the online world building Responsive, Interactive and Attractive Web Interfaces using tools such as <span ref={programRef} className="font-bold text-cta2"></span>
+        <p className={`text-base font-medium text-darkBlue md:text-xl`}>
+          Elevating the online world building Responsive, Interactive and Attractive Web Interfaces using tools such as {isSmallScreen && <br />} <span ref={programRef} className="font-bold text-cta2"></span>
         </p>
 
         <a href="#contact-me">

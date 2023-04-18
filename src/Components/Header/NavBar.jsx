@@ -2,7 +2,7 @@ import Resume from '../../assets/CV Resume.pdf';
 import { useMediaQuery } from '@react-hook/media-query';
 
 export default function NavBar(props) {
-  const isSmallScreen = useMediaQuery('(max-width:355px)');
+  const isSmallScreen = useMediaQuery('(max-width:380px)');
 
   return (
     <nav className="flex h-[80px] w-full max-w-[1300px] items-center justify-between px-8 py-3">
@@ -12,7 +12,7 @@ export default function NavBar(props) {
       </div>
 
       <div
-        className={`mobilenav fixed right-0 top-[80px] flex h-full ${isSmallScreen ? 'w-[60%]' : 'w-[50%]'} ${
+        className={`mobilenav fixed right-0 top-[80px] flex h-full ${isSmallScreen ? 'w-[70%]' : 'w-[50%]'} ${
           !props.navState ? 'translate-x-[100%]' : ''
         } z-[9999] h-screen flex-col items-center gap-[2rem] bg-navBar lg:relative lg:top-0 lg:h-auto lg:translate-x-0 lg:flex-row lg:justify-center lg:bg-transparent`}
       >

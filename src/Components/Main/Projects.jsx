@@ -63,7 +63,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div ref={(ref) => (contentData.current[project.id - 1] = ref)} className="mainContent show w-full bg-background p-8 lg:w-1/2">
+        <div ref={(ref) => (contentData.current[project.id - 1] = ref)} className="mainContent show w-full rounded-lg bg-background p-8 lg:w-1/2 lg:rounded-none">
           <p className="text-lg text-cta2">Featured Project</p>
           <h2 className="my-4 text-2xl font-bold">{project.title}</h2>
 
