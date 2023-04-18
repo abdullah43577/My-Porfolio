@@ -210,45 +210,21 @@ form {
   height: 100%;
   background-color: hsla(0, 0%, 20%, 0.2);
   transform-origin: bottom;
-  border-radius: 6px;
   transform: translateY(100%);
   display: flex;
   position: absolute;
   left: 0;
   top: 0;
+  transition: transform 800ms linear;
 }
 
 .project:hover {
   .cover {
-    animation: hover 1s ease forwards;
+    transform: translateY(0%);
   }
 
   img {
     scale: 1.09;
-  }
-}
-
-.project:not(:hover) .cover {
-  animation: unHover 2s ease forwards;
-}
-
-@keyframes hover {
-  0% {
-    transform: translateY(100%);
-  }
-
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-@keyframes unHover {
-  0% {
-    transform: translateY(0%);
-  }
-
-  100% {
-    transform: translateY(100%);
   }
 }
 
@@ -284,7 +260,7 @@ textarea:focus {
 }
 
 .circle {
-  transition: background 1000ms ease, border 400ms linear;
+  transition: background 1000ms linear, border 400ms linear;
 
   i {
     transition: color 1000ms ease;
