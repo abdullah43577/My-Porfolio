@@ -29,7 +29,7 @@ export default [
     liveURL: 'https://todoapplicationz.netlify.app/',
     content:
       'My todo application allows users to create, update, and delete tasks. Users can filter tasks based on their status (active, completed, or all) and rearrange them through drag and drop. This app offers a unique twist on the traditional todo application while remaining user-friendly and functional.',
-    techStacks: ['HTML', 'JS', 'TAILWIND', 'SASS', 'API'],
+    techStacks: ['HTML', 'JS', 'TAILWIND', 'SASS'],
     title: 'Todo Web App',
     reverse: true,
   },
