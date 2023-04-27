@@ -28,7 +28,7 @@ export default [
     githubURL: 'https://github.com/abdullah43577/To-Do-Application',
     liveURL: 'https://todoapplicationz.netlify.app/',
     content:
-      'At work and at home, having a to-do list may help you prioritize your work and personal tasks. This allows you to organize and complete the most crucial tasks first. To-do lists can be used to improve time management because all of your tasks are laid out clearly in advance.',
+      'My todo application allows users to create, update, and delete tasks. Users can filter tasks based on their status (active, completed, or all) and rearrange them through drag and drop. This app offers a unique twist on the traditional todo application while remaining user-friendly and functional.',
     techStacks: ['HTML', 'JS', 'TAILWIND', 'SASS', 'API'],
     title: 'Todo Web App',
     reverse: true,
@@ -103,7 +103,7 @@ export default [
     alt: 'My Portfolio screenshot',
     githubURL: 'https://github.com/abdullah43577/My-Porfolio',
     liveURL: 'https://ayooladev.netlify.app/',
-    content: "A clean simple minimalist portfolio to showcase my expertise in web development and the projects I've done over time",
+    content: 'A clean simple minimalist portfolio to showcase my expertise and skills in web development and the projects as a frontend developer',
     techStacks: ['HTML', 'REACT', 'SASS', 'TAILWIND'],
     title: "Abdullah Ayoola's Portfolio",
     reverse: true,
