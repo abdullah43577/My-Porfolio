@@ -44,6 +44,8 @@ export default function Footer() {
     );
   };
 
+  const [date, setDate] = useState(new Date());
+
   return (
     <footer id="contact-me" className="relative">
       <div className="innerContainer mx-auto mb-16 max-w-[1300px] p-8">
@@ -156,7 +158,7 @@ export default function Footer() {
         </div>
       </a>
 
-      <div className="copyright--sect w-full bg-navBar p-4 text-center text-background">Built using TailwindCSS and React. Copyright &copy; 2023. All rights reserved</div>
+      <div className="copyright--sect w-full bg-navBar p-4 text-center text-background">Copyright &copy; {date.getFullYear()}. Built using TailwindCSS and React. All rights reserved</div>
     </footer>
   );
 }
