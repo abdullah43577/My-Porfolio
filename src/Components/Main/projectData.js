@@ -6,6 +6,7 @@ import IPTrackify from '../../assets/IPTrackify.png';
 import staticJobs from '../../assets/static job lising.png';
 import rockPaperScissors from '../../assets/rockPaperScissors.png';
 import portfolioImg from '../../assets/Screenshot_15.png';
+import movieImg from '../../assets/image movie.png';
 
 export default [
   {
@@ -107,5 +108,17 @@ export default [
     techStacks: ['HTML', 'REACT', 'SASS', 'TAILWIND'],
     title: "Abdullah Ayoola's Portfolio",
     reverse: true,
+  },
+
+  {
+    id: 9,
+    img: movieImg,
+    alt: 'Movie App screenshot',
+    githubURL: 'https://github.com/abdullah43577/Movie-Entertainment-WebApp',
+    liveURL: 'https://flicksondemand.netlify.app/',
+    content: 'Explore the world of movies and TV shows with my captivating web app. Find, discover, and enjoy your favorite titles with ease. Sharpening my React skills while creating an immersive experience for movie enthusiasts.',
+    techStacks: ['HTML', 'REACT', 'SASS', 'TAILWIND', 'API'],
+    title: 'Flicks On Demand - Movie Entertainment Web App',
+    reverse: false,
   },
 ];
