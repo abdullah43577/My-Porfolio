@@ -176,7 +176,7 @@ form {
 
     &.show {
       opacity: 0;
-      visibility: invisible;
+      visibility: hidden;
     }
   }
 }
@@ -346,4 +346,57 @@ textarea:focus {
 
 .becomeFixed {
   overflow-y: hidden !important;
+}
+
+// pagination
+
+.pagination {
+  display: flex;
+  // gap: 3px;
+  align-items: center;
+  justify-content: space-between;
+  background: $navBar;
+  border-radius: 8px;
+  margin-block: 20px;
+  max-width: 300px;
+  margin-inline: auto;
+  color: #f3f3f3;
+
+  > * {
+    margin-inline: auto;
+    padding: 10px 12px;
+  }
+
+  .page-item:not(.disabled) {
+    cursor: pointer;
+    border-radius: 3px;
+
+    &:hover {
+      background: $cta;
+    }
+  }
+
+  .active {
+    background: $cta;
+  }
+
+  .disabled {
+    color: #999999;
+    cursor: not-allowed;
+  }
+}
+
+@media (min-width: 400px) {
+  .pagination {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pagination {
+    max-width: 600px;
+  }
+  .page-item {
+    padding: 8px 15px;
+  }
 }
